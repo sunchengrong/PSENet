@@ -1,4 +1,4 @@
-# Shape Robust Text Detection with Progressive Scale Expansion Network
+# Shape Robust Text Detection with Progressive Scale Expansion Network/基于渐进式鲁棒型扩展网络形状的文本检测
 
 ## Requirements
 * Python 2.7
@@ -8,15 +8,15 @@
 * OpenCV 3.4 (for c++ version pse)
 * opencv-python 3.4
 
-## Introduction
+## Introduction/简介
 Progressive Scale Expansion Network (PSENet) is a text detector which is able to well detect the arbitrary-shape text in natural scene.
 
-## Training
+## Training/训练
 ```
 CUDA_VISIBLE_DEVICES=0,1,2,3 python train_ic15.py
 ```
 
-## Testing
+## Testing/测试
 ```
 CUDA_VISIBLE_DEVICES=0 python test_ic15.py --scale 1 --resume [path of model]
 ```
